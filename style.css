@@ -192,8 +192,9 @@ section{padding:64px 0}
 .page-ilha .cta-band .btn{background:#000}
 .nav ul a.act{color:var(--gold)}
 @media(max-width:980px){.two{grid-template-columns:1fr}.aside{position:static}}
-.fleet{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:0 10px 30px rgba(11,34,89,.08);margin:0}
-.fleet img{width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;object-position:center top}
-.fleet figcaption{padding:22px 26px 26px}
-.fleet h3{font-size:1.15rem;margin-bottom:.3rem}
-.fleet p{font-size:.94rem}
+.fleet-sec .grid{align-items:start}
+.fleet{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(11,34,89,.08);margin:0}
+.fleet img{width:100%;height:190px;object-fit:cover;object-position:center 20%}
+.fleet figcaption{padding:16px 20px 18px}
+.fleet h3{font-size:1.05rem;margin-bottom:.2rem}
+.fleet p{font-size:.88rem;line-height:1.5}
