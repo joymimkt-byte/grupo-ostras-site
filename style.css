@@ -207,8 +207,8 @@ section{padding:64px 0}
 
 .prose-img{width:100%;height:auto;border-radius:18px;margin:1.2rem 0}
 .insta{text-align:center;padding-top:20px}.insta .sec-h{margin-left:auto;margin-right:auto}
-.ig-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:0 0 2rem}
-.ig-grid a{display:block;aspect-ratio:1;overflow:hidden;border-radius:14px}
+.ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:960px;margin:0 auto 2rem}
+.ig-grid a{display:block;aspect-ratio:4/5;box-shadow:0 8px 24px rgba(11,34,89,.12);overflow:hidden;border-radius:14px}
 .ig-grid img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
 .ig-grid a:hover img{transform:scale(1.05)}
-@media(max-width:900px){.ig-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.ig-grid{grid-template-columns:1fr 1fr}.ig-grid a:last-child{display:none}}
