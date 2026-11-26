@@ -204,3 +204,5 @@ section{padding:64px 0}
 .fleet figcaption{padding:16px 20px 18px}
 .fleet h3{font-size:1.05rem;margin-bottom:.2rem}
 .fleet p{font-size:.88rem;line-height:1.5}
+
+.prose-img{width:100%;height:auto;border-radius:18px;margin:1.2rem 0}
