@@ -100,6 +100,10 @@ header.on{background:var(--navy);box-shadow:0 6px 24px rgba(0,0,0,.18)}
 .ilha img{width:170px;height:auto}
 .ilha h3{color:#fff;font-size:1.35rem;margin-bottom:.4rem}
 .ilha a{color:var(--cyan);font-weight:600}
+.ilha p+p{margin-top:.6rem}
+.ilha .ilha-lead{color:var(--cyan);font-weight:700;font-size:1.1rem}
+.ilha-gal{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.ilha .ilha-gal img{width:100%;height:200px;object-fit:cover;border-radius:16px}
 
 /* faq */
 .faq details{background:#fff;border-radius:16px;margin-bottom:12px;box-shadow:0 6px 20px rgba(11,34,89,.06)}
@@ -148,6 +152,7 @@ section{padding:64px 0}
 .g4,.g3,.g2,.m5,.fgrid,form{grid-template-columns:1fr}
 .trust{flex-direction:column;width:100%}.trust div+div{border-left:0;border-top:2px dashed var(--gold)}
 .crucial,.ilha{grid-template-columns:1fr;padding:32px}
+.ilha-gal{grid-template-columns:1fr 1fr}.ilha .ilha-gal img{height:150px}.ilha .ilha-gal img:last-child{display:none}
 }
 
 /* páginas internas */
