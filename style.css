@@ -206,3 +206,9 @@ section{padding:64px 0}
 .fleet p{font-size:.88rem;line-height:1.5}
 
 .prose-img{width:100%;height:auto;border-radius:18px;margin:1.2rem 0}
+.insta{text-align:center;padding-top:20px}.insta .sec-h{margin-left:auto;margin-right:auto}
+.ig-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:0 0 2rem}
+.ig-grid a{display:block;aspect-ratio:1;overflow:hidden;border-radius:14px}
+.ig-grid img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.ig-grid a:hover img{transform:scale(1.05)}
+@media(max-width:900px){.ig-grid{grid-template-columns:repeat(3,1fr)}}
