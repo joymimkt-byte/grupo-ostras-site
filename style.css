@@ -28,7 +28,7 @@ header.on{background:var(--navy);box-shadow:0 6px 24px rgba(0,0,0,.18)}
 
 /* hero */
 .hero{position:relative;min-height:min(100vh,780px);display:flex;align-items:center;padding:120px 0 80px;overflow:hidden;color:#fff}
-.hero-bg{position:absolute;inset:0;background:url(img/rio.webp) center/cover;filter:blur(3px) brightness(.62);transform:scale(1.06)}
+.hero-bg{position:absolute;inset:0;background:url(img/hero-costa.webp) center 60%/cover;filter:brightness(.55)}
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(11,34,89,.92) 10%,rgba(11,34,89,.35) 70%)}
 .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
 .hero h1{color:#fff;font-size:clamp(2rem,4.4vw,3.3rem);margin-bottom:1rem}
@@ -40,7 +40,7 @@ header.on{background:var(--navy);box-shadow:0 6px 24px rgba(0,0,0,.18)}
 .trust b{color:var(--gold);font-size:1.25rem}
 .polas{position:relative;height:480px}
 .pola{position:absolute;background:#fff;padding:12px 12px 40px;border-radius:6px;box-shadow:0 20px 40px rgba(0,0,0,.35);width:300px}
-.pola div{height:220px;background:url(img/rio.webp) no-repeat;border-radius:3px}
+.pola div{height:220px;background:url(img/hero-costa.webp) center/cover no-repeat;border-radius:3px}
 .pola span{position:absolute;bottom:10px;left:0;right:0;text-align:center;color:var(--ink);font-weight:600;font-size:.85rem}
 .p1{top:0;left:6%;transform:rotate(-7deg)}.p1 div{background-size:260%;background-position:70% 15%}
 .p2{top:40px;right:-30px;transform:rotate(6deg)}.p2 div{background-size:300%;background-position:52% 95%}
@@ -119,6 +119,7 @@ header.on{background:var(--navy);box-shadow:0 6px 24px rgba(0,0,0,.18)}
 form{background:#fff;border-radius:var(--r);padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
 form label{font-size:.82rem;font-weight:600;color:var(--ink);display:flex;flex-direction:column;gap:6px}
 form .full{grid-column:1/-1}
+form>*{min-width:0}form input,form select,form textarea{width:100%;min-width:0}
 input,select,textarea{font:inherit;font-size:.95rem;padding:.75rem .9rem;border:1.5px solid #d6dcea;border-radius:12px;color:var(--ink);background:#fff}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold2)}
 .nap{list-style:none;margin-top:1.6rem}
@@ -157,7 +158,7 @@ section{padding:64px 0}
 
 /* páginas internas */
 .phero{position:relative;padding:150px 0 70px;color:#fff;overflow:hidden;background:var(--navy)}
-.phero:before{content:"";position:absolute;inset:0;background:url(img/rio.webp) center/cover;filter:blur(3px) brightness(.5);transform:scale(1.06)}
+.phero:before{content:"";position:absolute;inset:0;background:url(img/hero-costa.webp) center 60%/cover;filter:brightness(.6)}
 .phero:after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(11,34,89,.95) 20%,rgba(11,34,89,.5))}
 .phero .wrap{position:relative;z-index:2}
 .phero h1{color:#fff;font-size:clamp(1.9rem,4vw,3rem);max-width:820px;margin-bottom:1rem}
@@ -212,3 +213,22 @@ section{padding:64px 0}
 .ig-grid img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
 .ig-grid a:hover img{transform:scale(1.05)}
 @media(max-width:700px){.ig-grid{grid-template-columns:1fr 1fr}.ig-grid a:last-child{display:none}}
+
+/* mobile: centralização */
+@media(max-width:620px){
+.hero .wrap>div:first-child,.phero .wrap,.sec-h,.card,.mcard,.dest,.fleet figcaption,.crucial,.ilha>div:first-child,.cta-band .wrap,.orc .wrap>div:first-child,.aside,footer .fgrid>div,.copy,.insta{text-align:center}
+.hero .ctas{justify-content:center}.hero .ctas .btn{width:100%;justify-content:center}
+.trust{margin-left:auto;margin-right:auto}.trust div{justify-content:center}
+.phero p,.hero p.lead,.sec-h{margin-left:auto;margin-right:auto}
+.crumb{justify-content:center}
+.card{align-items:center}.card .ic{margin-left:auto;margin-right:auto}
+.dest{align-items:center}
+.brandbar{justify-content:center}
+.crucial img,.ilha>img{margin:0 auto}
+.cta-band .wrap{justify-content:center;flex-direction:column}
+.btn{justify-content:center}
+.nap{text-align:center}.orc .wrap>*{min-width:0}
+#historia .tag,#historia h2{display:block;text-align:center}
+footer .fgrid img{display:block;margin-left:auto;margin-right:auto}
+footer ul{padding:0}
+}
